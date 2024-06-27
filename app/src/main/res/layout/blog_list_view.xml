@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ivAvator"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_circle" />
+
+        <TextView
+            android:id="@+id/tvauthorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="256dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="PlotWriter"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="154dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="June 27 2024"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvauthorName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvblogTitle"
+            android:layout_width="392dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="84dp"
+            android:fontFamily="sans-serif-black"
+            android:text="ALL 46 DREAMWORKS ANIMATIONS RANKED"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivImagepanda"
+            android:layout_width="413dp"
+            android:layout_height="196dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvblogTitle"
+            app:srcCompat="@drawable/kungfupanda" />
+
+        <TextView
+            android:id="@+id/tvlink"
+            android:layout_width="121dp"
+            android:layout_height="27dp"
+            android:text="Read More"
+            android:textColor="#0B2DEA"
+
+            android:textColorLink="#673AB7"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArticleview"
+            app:layout_constraintVertical_bias="0.159" />
+
+        <TextView
+            android:id="@+id/tvArticleview"
+            android:layout_width="375dp"
+            android:layout_height="253dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="96dp"
+            android:text="Dreamworks Animations's first Antz,  released two months before A Bugs Life, and thus this studio was born into incessant comparison to Pixar's output,molded by it, becoming the snarky and sacarstic foil to its competitors earnestness.Dreamworks Animation would forge most of its identity and formular on the back one giant,smelly,green ogre:Shrek which has generated sequels,tieins themepark rides,and billions of dollars,while ensuring Smash Mouth's &quot;All-Star&quot; never leaving the pop cultures ironic curriculum."
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.716"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
